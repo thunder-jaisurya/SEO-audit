@@ -3,53 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Professional Portfolio of Thunder Jaisurya - Skills, Projects, and Contact Information">
+    <title>Thunder Jaisurya - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+            color: #fff;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        section {
+            padding: 20px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .skill-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+            width: 200px;
+        }
+        .skill-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        @media (max-width: 600px) {
+            .skills {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Professional Portfolio</h1>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-
     <section id="about">
-        <h2>About Me</h2>
-        <p>I am a dedicated professional with expertise in various fields. My goal is to create impactful solutions that drive results.</p>
+        <h1>About Me</h1>
+        <p>Hello! I am Thunder Jaisurya, a passionate web developer and design enthusiast. This portfolio showcases my skills and projects.</p>
     </section>
-
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Web Development</li>
-            <li>UI/UX Design</li>
-            <li>Project Management</li>
-            <li>Data Analysis</li>
-        </ul>
+        <div class="skills">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">SEO</div>
+        </div>
     </section>
-
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title 1</h3>
-            <p>Description of the project and what was achieved.</p>
-        </div>
-        <div class="project">
-            <h3>Project Title 2</h3>
-            <p>Description of the project and what was achieved.</p>
-        </div>
+        <p>Here are some of the projects I have worked on:</p>
+        <ul>
+            <li>Project A - Description of project A</li>
+            <li>Project B - Description of project B</li>
+            <li>Project C - Description of project C</li>
+        </ul>
     </section>
-
-    <footer id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p>LinkedIn: <a href="#">Your LinkedIn Profile</a></p>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch, please email me at thunder.jaisurya@example.com.</p>
+    </section>
+    <footer>
+        <p>&copy; 2026 Thunder Jaisurya. All rights reserved.</p>
     </footer>
 </body>
 </html>
